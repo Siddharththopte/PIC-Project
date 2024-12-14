@@ -1,0 +1,19 @@
+# MPLAB IDE generated this makefile for use with Microsoft `nmake'.
+# Project: potentiometer to change the blink period of an LED.mcp
+# Date: Sat Dec 14 12:35:01 2024
+
+AS = MPASMWIN.exe
+CC = mcc18.exe
+LD = mplink.exe
+AR = mplib.exe
+RM = del
+
+"potentiometer to change the blink period of an LED.cof" : "potentiometer to change the blink period of an LED.o"
+	$(LD) /p18F4580 /l"C:\Program Files (x86)\Microchip\mplabc18\v3.46\lib" "potentiometer to change the blink period of an LED.o" /u_CRUNTIME /u_DEBUG /z__MPLAB_BUILD=1 /z__MPLAB_DEBUG=1 /o"potentiometer to change the blink period of an LED.cof" /M"potentiometer to change the blink period of an LED.map" /W
+
+"potentiometer to change the blink period of an LED.o" : "potentiometer to change the blink period of an LED.C" "..\..\..\..\..\..\Program Files (x86)\Microchip\mplabc18\v3.46\h\p18f4580.h"
+	$(CC) -p=18F4580 "potentiometer to change the blink period of an LED.C" -fo="potentiometer to change the blink period of an LED.o" -D__DEBUG -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"clean" : 
+	$(RM) "potentiometer to change the blink period of an LED.o" "potentiometer to change the blink period of an LED.cof" "potentiometer to change the blink period of an LED.hex"
+
